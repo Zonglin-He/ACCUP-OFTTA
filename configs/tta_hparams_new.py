@@ -50,14 +50,14 @@ class EEG():
         self.alg_hparams = {
             'ACCUP': {
                 'pre_learning_rate': 1e-3,
-                'learning_rate': 2e-4,
+                'learning_rate': 1e-4,
                 'tau': 1.0,
                 'temperature': 0.9,
                 'filter_K': 15,
                 'proto_consistency': True,
                 'proto_ent_q': 0.0,
                 'edtn_alpha0': 0.5,
-                'edtn_lambda': 0.7,
+                'edtn_lambda': 0.9,
                 'proto_scale': 7.0,
                 'revin': True
             },
