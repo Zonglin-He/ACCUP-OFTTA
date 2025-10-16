@@ -141,11 +141,11 @@ python -m trainers.tta_trainer `
 ## References
 
 ```bibtex
-@article{ACCUP2024,
-  title   = {Augmented Contrastive Clustering with Uncertainty-Aware Prototyping for Time Series Test-Time Adaptation},
-  author  = {…},
-  journal = {…},
-  year    = {2024}
+@article{Gong2025ACCUParXiv,
+  author  = {Peiliang Gong and Mohamed Ragab and Min Wu and Zhenghua Chen and Yongyi Su and Xiaoli Li and Daoqiang Zhang},
+  title   = {Augmented Contrastive Clustering with Uncertainty-Aware Prototyping for Time Series Test Time Adaptation},
+  journal = {arXiv preprint arXiv:2501.01472},
+  year    = {2025}
 }
 
 @inproceedings{OFTTA2023,
@@ -164,4 +164,3 @@ Recommend **MIT** or **Apache-2.0**. Keep third-party LICENSES and acknowledgmen
 
 ---
 
-如果你愿意，我也可以把两份 README **合并成一个带语言切换目录的单文件**，或把你的实际超参数（`tta_hparams_new.py` 里的默认值）自动展开成表格版参数说明。只要把你当前用的主要运行命令贴给我，我就把它们也补进“复现实验”小节。
