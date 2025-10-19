@@ -14,23 +14,24 @@ class FD():
             'weight_decay': 1e-4,
             'step_size': 50,
             'lr_decay': 0.5,
-            'steps': 2,
+            'steps': 3,
             'optim_method': 'adam',
             'momentum': 0.9
         }
         self.alg_hparams = {
             'ACCUP': {
-                'pre_learning_rate': 1e-3,
-                'learning_rate': 5e-4,
-                'tau': 1.0,
-                'temperature': 0.7,
-                'filter_K': 20,
-                'proto_consistency': True,
-                'proto_ent_q': 0.0,
-                'edtn_alpha0': 0.7,
-                'edtn_lambda': 0.7,
-                'proto_scale': 10.0
-            },
+                    'pre_learning_rate': 1e-3,
+                    'learning_rate': 2e-5,
+                    'tau': 0.98,
+                    'temperature': 0.8,   # 若无用可删
+                    'filter_K': 20,       # 40 太大易引入噪声
+                    'proto_consistency': True,
+                    'proto_ent_q': 0.75,   # 关键：关闭固定 0.5，交给 Head 内部动态阈
+                    'edtn_alpha0': 0.70,
+                    'edtn_lambda0': 0.65,  # 目标 prior[-1]≈0.8
+                    'proto_scale': 11.0,
+                    'revin': True,
+                },
             'NoAdap': {'pre_learning_rate': 1e-3}
         }
 
